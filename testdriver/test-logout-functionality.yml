@@ -1,0 +1,28 @@
+version: 4.0.80
+steps:
+  - prompt: Log in to the account.
+    commands:
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+  - prompt: Log in to the account.
+    commands:
+      - command: type
+        text: user@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: securepassword123
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click
+  - prompt: Log in to the account.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click

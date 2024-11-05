@@ -1,0 +1,44 @@
+version: 4.0.80
+steps:
+  - prompt: Log in and navigate to the user profile page.
+    commands:
+      - command: hover-text
+        text: name@example.com
+        description: email input field
+        action: click
+      - command: type
+        text: user@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: password123
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click
+      - command: hover-text
+        text: Profile
+        description: profile link or icon
+        action: click
+  - prompt: Log in and navigate to the user profile page.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click
+      - command: hover-text
+        text: Profile
+        description: profile link or icon
+        action: click
+  - prompt: Log in and navigate to the user profile page.
+    commands:
+      - command: hover-text
+        text: Sign
+        description: sign in button
+        action: click
+      - command: hover-text
+        text: Profile
+        description: profile link or icon
+        action: click

@@ -1,0 +1,30 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "About" link in the header.
+    commands:
+      - command: hover-text
+        text: About
+        description: link in the header
+        action: click
+  - prompt: Click on "About" link in the header.
+    commands:
+      - command: hover-text
+        text: Menu
+        description: menu icon in the header
+        action: click
+      - command: hover-text
+        text: About
+        description: link in the menu
+        action: click
+  - prompt: Click on "About" link in the header.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+      - command: hover-text
+        text: Menu
+        description: menu icon in the header
+        action: click
+      - command: hover-text
+        text: About
+        description: link in the menu
+        action: click

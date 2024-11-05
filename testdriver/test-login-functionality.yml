@@ -1,0 +1,28 @@
+version: 4.0.80
+steps:
+  - prompt: Enter valid credentials in the email and password fields.
+    commands:
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: test@example.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: securepassword123
+  - prompt: Click the "Sign in" button.
+    commands:
+      - command: hover-text
+        text: Sign in
+        description: sign in button
+        action: click
+  - prompt: >-
+      Assert that the user is logged in successfully and redirected to the
+      dashboard.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: the user is on the dashboard

@@ -1,0 +1,12 @@
+version: 4.0.80
+steps:
+  - prompt: Click on "Contact Us" link in the footer.
+    commands: []
+  - prompt: Assert that a contact form or contact information is displayed.
+    commands: []
+  - prompt: Fill out the contact form and submit it.
+    commands: []
+  - prompt: >-
+      Assert that a confirmation or thank-you message appears.  # Use the
+      content of the file from the environment
+    commands: []
